@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Climbing Coach App</title>
+    <!-- Import TensorFlow.js library -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"></script>
+    <!-- Import Pose Estimation Model (e.g., PoseNet) -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/posenet"></script>
+    <!-- Link to external CSS stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Climbing Coach AI</h1>
+
+    <!-- File Upload for Video -->
+    <input type="file" id="file-upload" accept="video/*" />
+
+    <!-- Container for videos -->
+    <div class="container">
+        <!-- Original video -->
+        <div class="video">
+            <video id="climbing-video" controls hidden></video>
+        </div>
+        <!-- Canvas for model output -->
+        <div class="video">
+            <canvas id="output-canvas"></canvas>
+        </div>
+    </div>
+
+    <!-- Separate JavaScript File for TensorFlow.js Logic -->
+    <script src="app.js"></script>
+</body>
+</html>
