@@ -2,25 +2,20 @@
 <html>
 <head>
     <title>Climbing Coach App</title>
-    <!-- Import TensorFlow.js library -->
-    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"></script>
-    <!-- Import Pose Estimation Model (e.g., PoseNet) -->
-    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/posenet"></script>
+    <!-- Import TensorFlow.js and BlazePose dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-core"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-converter"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-backend-webgl"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/pose-detection"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1>Climbing Coach AI</h1>
-
-    <!-- File Upload for Video -->
     <input type="file" id="file-upload" accept="video/*" />
-
-    <!-- Section to display video and results -->
     <div id="video-container">
         <video id="climbing-video" width="640" height="480" controls hidden></video>
         <canvas id="output-canvas" width="640" height="480"></canvas>
     </div>
-
-    <!-- Separate JavaScript File for TensorFlow.js Logic -->
     <script src="app.js"></script>
 </body>
 </html>
