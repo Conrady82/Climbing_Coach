@@ -1,24 +1,13 @@
-/* style.css */
-body {
+ /* Simple styling */
+ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     text-align: center;
 }
-
-.container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
+#video-container {
+    margin-top: 20px;
 }
-
-.video {
-    flex: 1;
-    min-width: 300px; /* Adjust as needed for minimum readability */
-}
-
 canvas {
     border: 2px dashed grey;
-    max-width: 100%;
 }
